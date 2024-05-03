@@ -1,0 +1,11 @@
+#/bin/bash
+
+#Verificar que al menos se nos tiene que pasar
+#un parametro
+
+#verificar que al menos haya un parametro
+if [[ $# -lt 1 ]]; then 
+    echo Hay que introducir al menos un parametro
+else 
+    echo Has introducido $# parametro/s
+fi

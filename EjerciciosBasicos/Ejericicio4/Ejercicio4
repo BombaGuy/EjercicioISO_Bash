@@ -1,0 +1,18 @@
+#/bin/bash
+
+#Sacar el mayor de dos parametros
+num1=$1
+num2=$2
+
+
+if [[ $# -ne 2 ]]; then 
+    echo Son necesarios dos parametros
+else
+    if [[ num1 -gt num2 ]]; then 
+        echo $num1 es el mayor de los dos parametros
+    elif [[ num1 -eq num2 ]]; then  
+        echo Los dos parametros son iguales
+    else 
+        echo $num2 es el mayor de los dos parametros
+    fi
+fi

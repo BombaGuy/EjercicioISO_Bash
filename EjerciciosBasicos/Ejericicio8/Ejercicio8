@@ -1,0 +1,21 @@
+#/bin/bash
+
+#menos de 5 parametros malo
+#mas de 5 paramentros malo
+#5 parametros = num_param param
+
+
+if [[ $# -lt 5 ]]; then
+    echo Faltan parámetros
+elif [[ $# -gt 5 ]]; then
+    echo Sobran parámetros
+else    
+    #Argumento actual
+    actual_arg=1
+    #Recorrer los argumentos
+    for args in $@; do
+       echo El parametro $actual_arg es $args
+       let "actual_arg++"
+       # actual_arg=$((actual_arg + 1))
+    done
+fi

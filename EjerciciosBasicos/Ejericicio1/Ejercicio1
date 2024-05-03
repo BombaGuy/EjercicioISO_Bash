@@ -1,0 +1,7 @@
+#/bin/bash
+
+#Mostrar cuantos parametros me ha pasado 
+#el usuario por la consola
+echo Has pasado $# parámetros
+echo El primer parametro es: $1
+echo El segundo parametro es: $2

@@ -1,0 +1,12 @@
+#/bin/bash
+
+#Mirar si el directorio pasado por parametro existe
+
+file=$1
+
+
+if [[ -d $file ]];then
+    echo El directorio $file exite
+else 
+    echo El directorio  $file no existe
+fi

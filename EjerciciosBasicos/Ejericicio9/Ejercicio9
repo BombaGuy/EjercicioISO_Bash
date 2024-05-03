@@ -1,0 +1,10 @@
+#/bin/bash
+
+#generar un numeroo entre 1 y el parametro
+
+
+if [[ $# -ne 1 ]]; then 
+    echo Se necesita un argumento
+else 
+    echo $((1 + RANDOM % $1))
+fi

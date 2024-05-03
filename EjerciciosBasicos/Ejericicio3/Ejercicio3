@@ -1,0 +1,21 @@
+#/bin/bash
+
+#Realizar suma, resta, producto, residuo
+#Valores
+num1=$1
+num2=$2
+
+
+if [[ $# -ne 2 ]]; then
+    echo Son necesarios dos argumentos
+else 
+    suma=$(( $num1 + $num2 ))
+    resta=$(( $num1 - $num2 ))
+    producto=$(( $num1 * $num2 ))
+    residuo=$(( $num1 % $num2 ))
+    echo la suma es $suma
+    echo la resta es $resta 
+    echo el producto es $producto 
+    echo el residuo es $residuo
+fi
+
